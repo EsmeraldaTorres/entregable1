@@ -1,0 +1,109 @@
+.quotebox {
+  display: grid;
+  gap: 20px;
+  justify-items: center;
+}
+.quotebox_box {
+  background-image: url("/rectangle.svg");
+  width: 366px;
+  height: 175px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quotebox_title {
+  color: #fff;
+  text-align: center;
+  text-shadow: 4px 6px 0px rgba(0, 0, 0, 0.17);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.quotebox_phrase {
+  padding-bottom: 20px;
+  max-width: 300px;
+}
+.quotebox_btn {
+  color: #727272;
+
+  font-size: 20px;
+  width: 181px;
+  height: 44px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.6);
+}
+.quotebox_author {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.cookie {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.bg1 {
+  overflow: hidden;
+  background-size: cover;
+  background-image: url("/images/backgroun1.png");
+}
+.bg2 {
+  overflow: hidden;
+
+  background-size: cover;
+
+  background-image: url("/images/background2.png");
+}
+.bg3 {
+  overflow: hidden;
+
+  background-size: cover;
+
+  background-image: url("/images/background3.png");
+}
+.bg4 {
+  overflow: hidden;
+
+  background-size: cover;
+
+  background-image: url("/images/background4.png");
+}
+.element1 {
+  background-image: url("/images/cookie1.png");
+}
+.translate0 {
+  translate: 0;
+}
+.translateRight {
+  translate: 50%;
+}
+.translateLeft {
+  translate: -50%;
+}
+@media (min-width: 766px) {
+  .quotebox_box {
+    background-image: url("/rectangleLg.svg");
+    width: 640px;
+    height: 259px;
+  }
+  .quotebox_phrase {
+    max-width: 500px;
+  }
+  .quotebox_title {
+    font-size: 36px;
+  }
+  .cookie {
+    max-width: 80%;
+    max-height: 80%;
+  }
+  .translateRight {
+    translate: 100%;
+  }
+  .translateLeft {
+    translate: -100%;
+  }
+}
